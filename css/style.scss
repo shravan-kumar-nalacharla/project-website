@@ -41,7 +41,7 @@ $primary2: #6d00fc;
 body {
   @include main-font;
   color: #0c0c0c;
-  background-color: #ffffff;
+   background-image: url('images/background.png');
 }
 
 .layout_padding {
