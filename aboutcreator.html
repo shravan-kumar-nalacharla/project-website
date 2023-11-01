@@ -46,63 +46,168 @@
 </head>
 <body>
     <!-- about section -->
-
-  <section class="about_section layout_padding">
-   <div class="container">
-  <div class="row">
-    <div class="col-md-6 px-0">
-      <div class="img_container">
-        <div class="img-box">
-          <img src="imagehere" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 px-0">
-      <div class="detail-box">
-        <div class="heading_container ">
-          <h2 style="color: black;"> <!-- Set text color to black -->
-           ABOUT CREATOR
-          </h2>
-        </div>
-        <p style="color: black;"> <!-- Set text color to black -->
-        Hello Everyone, My nama is Nalacharla Shravan Kumar. I am Pursuing My B.Tech In Anurag University. currently i am in CSE Data science Stream. I am excited to share my accomplishments, projects, and experiences that i have archieved in My College and From Avidia Cohort. apart from academics i am also interested in content creation and video ediitng.
-        <div class="btn-box">
-          <a href="">
-            Read More
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  </section>
+<!DOCTYPE html>
+<html>
 <head>
-    <title>My Social Links</title>
+    <meta charset="UTF-8">
+    <title>ABOUT CREATOR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400&display=swap" rel="stylesheet">
     <style>
-        .social-buttons {
-            text-align: center; /* Center-align the content within the container */
-            margin-top: 100px; /* Adjust the margin to center vertically */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #000;
+            text-align: center;
+            position: relative;
+            margin: 0;
+            padding: 0;
         }
-        .social-button {
-            margin: 10px; /* Add some spacing between buttons */
+        body {
+            font-family: 'Montserrat', sans-serif; /* Set the font-family to Montserrat for headings */
+            background-color: #fff;
+            color: #000; /* Set text color to black */
+            text-align: center;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .intro-box, .skills-box {
+            font-family: 'Poppins', sans-serif; /* Set the font-family to Poppins for text in boxes */
+            background-color: #fff; /* White background color for the box */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow effect for the box */
+            opacity: 0.7; /* Opacity for the box */
+            transition: transform 0.3s; /* Add transition for the floating effect */
+        }
+
+        .intro-box:hover, .skills-box:hover {
+            transform: translateY(-5px); /* Float up on hover */
+        }
+
+        h1, h2 {
+            color: #000; /* Set text color to black for headings */
+        }
+
+        .intro, .skills {
+            font-size: 18px;
+            color: #000; /* Set text color to black */
+            transition: transform 0.3s; /* Add transition for the floating effect */
+        }
+
+        .intro:hover, .skills:hover {
+            transform: translateY(-5px); /* Float up on hover */
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #fff; /* White background color for buttons */
+            color: #000; /* Black text color for buttons */
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow effect for buttons */
+            opacity: 0.7; /* Opacity for buttons */
+            position: relative;
+            transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s, opacity 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff0000; /* Red background color on hover */
+            color: #fff; /* White text color on hover */
+            transform: translateY(-5px); /* Float up on hover */
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+
+        .skills-buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .skill-btn {
+            margin: 10px;
+            font-size: 16px;
+            color: #000;
+            text-decoration: none;
+            position: relative;
+            transition: opacity 0.3s; /* Add opacity transition */
+        }
+
+        .skill-btn::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -2px;
+            background: #ff0000;
+            height: 2px;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s;
+        }
+
+        .skill-btn:hover::after {
+            transform: scaleX(1);
+            opacity: 1; /* Make the red line fully opaque on hover */
+        }
+
+        /* Contact button style */
+        .contact-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Connect with Me on Social Media</h1>
-    
-    <div class="social-buttons">
-        <a href="https://www.linkedin.com/in/shravan-kumar-nalacharla-1aaa31292/" target="_blank">
-            <button class="social-button linkedin">Linkedin</button>
-        </a>
-        
-        <a href="https://www.instagram.com/shravan_nalacharla/" target="_blank">
-            <button class="social-button instagram">Instagram</button>
-        </a>
+    <div class="container">
+        <h1>ABOUT CREATOR</h1>
+        <div class="intro-box">
+            <p class="intro">
+                Hello everyone, My name is Nalacharla Shravan Kumar. I am pursuing my B.Tech in Anurag University. Currently, I am in the CSE Data Science Stream. I am excited to share my accomplishments, projects, and experiences that I have achieved in my 4 years' journey at my university.
+            </p>
+        </div>
+        <div class="skills-box">
+            <h2>SKILLS</h2>
+            <div class="skills-buttons">
+                <a href="#" class="skill-btn">Adobe Premiere Pro</a>
+                <a href="#" class="skill-btn">Adobe After Effects</a>
+                <a href="#" class="skill-btn">Adobe Photoshop</a>
+                <a href="#" class="skill-btn">YouTube SEO</a>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/shravan-kumar-nalacharla-1aaa31292/" class="btn" target="_blank">LinkedIn</a>
+            <a href="https://github.com/shravan-kumar-nalacharla" class="btn github" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/shravan_nalacharla/" class="btn instagram" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/channel/UC6OJJRVE7Pw2NsL-bR6eBvw" class="btn youtube" target="_blank">YouTube</a>
+        </div>
     </div>
+    
+    <!-- Contact button -->
+    <a href="mailto:youremail@gmail.com" class="contact-button">Contact Me</a>
 </body>
 </html>
+
 
 
   <!-- end about section -->
